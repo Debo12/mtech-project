@@ -1,0 +1,59 @@
+/* styles/HomePage.module.css */
+.hero {
+    background-image: url('../public/images/exlpainable-ai-2.jpg'); /* Adjust the path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    text-align: center;
+    color: white;
+  }
+  
+  .heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .feature {
+    max-width: 300px;
+    margin: 0 20px;
+  }
+  
+  .feature img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .footer {
+    background-color: #f9f9f9;
+    padding: 3px 0;
+    text-align: center;
+  }
+  

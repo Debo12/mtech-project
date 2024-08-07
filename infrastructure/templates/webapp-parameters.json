@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southcentralus"
+        },
+        "subscriptionId": {
+            "value": "10cd0bc4-295d-4712-8485-3b7fbdbc97df"
+        },
+        "resourceGroupName": {
+            "value": "xai-rg"
+        },
+        "name": {
+            "value": "xaibackendapp"
+        },
+        "hostingPlanName": {
+            "value": "ASP-xairg-887b"
+        },
+        "serverFarmResourceGroup": {
+            "value": "xai-rg"
+        },
+        "alwaysOn": {
+            "value": false
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "skuCode": {
+            "value": "F1"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "linuxFxVersion": {
+            "value": "DOCKER|xairegistry1.azurecr.io/xai-backend-container:latest"
+        },
+        "dockerRegistryUrl": {
+            "value": "https://xairegistry1.azurecr.io"
+        },
+        "dockerRegistryUsername": {
+            "value": "xairegistry1"
+        },
+        "dockerRegistryPassword": {
+            "value": ""
+        },
+        "dockerRegistryStartupCommand": {
+            "value": ""
+        }
+    }
+}

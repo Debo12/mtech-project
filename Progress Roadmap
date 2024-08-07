@@ -1,0 +1,17 @@
+<====================== High Level Steps ======================>
+1. Data Understanding and Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Econometric Methods
+4. Feature/Variable Selection
+5. Model Selection and Training
+6. Model Evaluation
+7. Model Interpretation
+8. Econometric Diagnostics and Validation
+
+<====================== 3. Econometric Methods ======================>
+1. Econometrics vs Machine Learning:- Econometrics helps to understand why things happen and ML helps to make accurate guess about the future.
+
+<====================== 4. How to do Feature Selection ======================>
+1. Filter Methods: Use statistical measures to select features (e.g., correlation coefficients, chi-square test).
+2. Wrapper Methods: Use a predictive model to evaluate combinations of features and select the best performing set (e.g., recursive feature elimination).
+3. Embedded Methods: Perform feature selection during the model training process (e.g., Lasso regularization).

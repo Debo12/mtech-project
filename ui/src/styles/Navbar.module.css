@@ -1,0 +1,40 @@
+/* styles/Navbar.module.css */
+.navbar {
+    background-color: #000000;
+    /* padding: 20px 20px; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    padding-left: 25px;
+  }
+  
+  .logo a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navLinks li {
+    margin-right: 20px;
+  }
+  
+  .navLinks li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks li a:hover {
+    color: #0056b3;
+  }
+  

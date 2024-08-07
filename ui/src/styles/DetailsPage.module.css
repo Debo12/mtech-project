@@ -1,0 +1,37 @@
+/* DetailsPage.module.css */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Adjust column widths as needed */
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.table {
+  background-color: #f8f9fa; /* Light gray background */
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.tableRow {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.tableCell {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.graph {
+  background-color: #fff; /* White background */
+  border: 1px solid #ced4da; /* Gray border */
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.graph img {
+  max-width: 100%;
+  height: auto;
+}

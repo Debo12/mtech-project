@@ -1,0 +1,29 @@
+trigger:
+- master
+
+pool:
+  name: Azure Pipelines 
+  
+steps:
+  - task: AzureCLI@2
+    displayName: 'Azure CLI $(System.DefaultWorkingDirectory)/_xai-proj/infrastructure/scripts/template_deployment.sh'
+    inputs:
+      azureSubscription: 'xai-service-connection'
+      scriptType: bash
+      scriptPath: '$(System.DefaultWorkingDirectory)/_xai-proj/infrastructure/scripts/container_deployment.sh'
+      arguments: '-RESOURCE_GROUP_NAME $(RESOURCE_GROUP_NAME) -LOCATION $(LOCATION)'
+
+  - task: Docker@2
+    displayName: buildAndPush
+    inputs:
+      containerRegistry: 'xai-registry-connection'
+      repository: 'xai-backend-container'
+      tags: latest
+
+  - task: AzureCLI@2
+    displayName: 'Azure CLI $(System.DefaultWorkingDirectory)/_xai-proj/infrastructure/scripts/resource_deployment.sh'
+    inputs:
+      azureSubscription: 'xai-service-connection'
+      scriptType: bash
+      scriptPath: '$(System.DefaultWorkingDirectory)/_xai-proj/infrastructure/scripts/container_deployment.sh'
+      arguments: '-RESOURCE_GROUP_NAME $(RESOURCE_GROUP_NAME) -LOCATION $(LOCATION)'

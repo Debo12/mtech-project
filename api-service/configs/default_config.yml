@@ -1,0 +1,4 @@
+configs:
+  MONGODB_URI: "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.mxdci.mongodb.net/xai_db"
+  DB_NAME: "xai_db"
+  COLLECTIONS: ['Users', 'Insurance_Companies', 'Complaints', 'Model_Prediction', 'Model_Train_Metadata', 'User_Activity']

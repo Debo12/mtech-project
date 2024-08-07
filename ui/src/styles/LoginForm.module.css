@@ -1,0 +1,105 @@
+/* styles/LoginForm.module.css */
+
+.formContainer {
+  width: 400px;
+  margin: 10px auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the items horizontally */
+}
+
+.formContainer2{
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px auto;
+}
+
+.stylish-font {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-weight: 700; /* Apply bold font weight */
+  /* Add any additional styling here */
+}
+
+.picture {
+  width: 100px; /* Set the width of the picture */
+  margin-bottom: 20px; /* Add space below the picture */
+}
+
+.pictureImg {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Add some border radius for a nicer look */
+}
+
+.card {
+  width: 100%; /* Make the card fill the container */
+  max-width: 300px; /* Set maximum width for better responsiveness */
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+}
+
+/* Additional styles for the card */
+.cardContent {
+  flex: 1;
+}
+
+.socialLogin {
+  margin-top: 20px; /* Add some space between the login button and the social icons */
+}
+
+.error {
+  color: red;
+}
+
+.icon {
+  padding: 13px;
+  margin: 5px 15px; /* Add margin between icons */
+}
+
+Button{
+  width: 100%;
+}
+
+/* DividerComponent.module.css */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc; /* Use a light gray color for the line */
+  margin: 0 10px;
+}
+
+.text {
+  margin: 0 10px; /* Adjust spacing between text and lines */
+  font-size: 14px;
+  color: #777; /* Use a darker gray color for the text */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signUpLink {
+  text-align: center;
+  padding-top: 7px;
+  margin-top: 20px; /* Add some space above the link */
+  font-size: 14px;
+}
+
+.forgotPasswordLink {
+  text-align: center;
+  margin-top: 10px; /* Add some space above the link */
+  font-size: 14px;
+}
